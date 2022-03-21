@@ -1,0 +1,123 @@
+package WAR;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Deck {
+	private ArrayList<Card> cards = new ArrayList<Card>();
+	
+	public Deck() {
+		Card TwoOfHearts = new Card("Two of Hearts", 2);
+		Card ThreeOfHearts = new Card("Three of Hearts", 3);
+		Card FourOfHearts = new Card("Four of Hearts", 4);
+		Card FiveOfHearts = new Card("Five of Hearts", 5);
+		Card SixOfHearts = new Card("Six of Hearts", 6);
+		Card SevenOfHearts = new Card("Seven of Hearts", 7);
+		Card EightOfHearts = new Card("Eight of Hearts", 8);
+		Card NineOfHearts = new Card("Nine of Hearts", 9);
+		Card TenOfHearts = new Card("Ten of Hearts", 10);
+		Card JackOfHearts = new Card("Jack of Hearts", 11);
+		Card QueenOfHearts = new Card("Queen of Hearts", 12);
+		Card KingOfHearts = new Card("King of Hearts", 13);
+		Card AceOfHearts = new Card("Ace of Hearts", 14);
+		Card TwoOfDiamonds = new Card("Two of Diamonds", 2);
+		Card ThreeOfDiamonds = new Card("Three of Diamonds", 3);
+		Card FourOfDiamonds = new Card("Four of Diamonds", 4);
+		Card FiveOfDiamonds = new Card("Five of Diamonds", 5);
+		Card SixOfDiamonds = new Card("Six of Diamonds", 6);
+		Card SevenOfDiamonds = new Card("Seven of Diamonds", 7);
+		Card EightOfDiamonds = new Card("Eight of Diamonds", 8);
+		Card NineOfDiamonds = new Card("Nine of Diamonds", 9);
+		Card TenOfDiamonds = new Card("Ten of Diamonds", 10);
+		Card JackOfDiamonds = new Card("Jack of Diamonds", 11);
+		Card QueenOfDiamonds = new Card("Queen of Diamonds", 12);
+		Card KingOfDiamonds = new Card("King of Diamonds", 13);
+		Card AceOfDiamonds = new Card("Ace of Diamonds", 14);
+		Card TwoOfSpades = new Card("Two of Spades", 2);
+		Card ThreeOfSpades = new Card("Three of Spades", 3);
+		Card FourOfSpades = new Card("Four of Spades", 4);
+		Card FiveOfSpades = new Card("Five of Spades", 5);
+		Card SixOfSpades = new Card("Six of Spades", 6);
+		Card SevenOfSpades = new Card("Seven of Spades", 7);
+		Card EightOfSpades = new Card("Eight of Spades", 8);
+		Card NineOfSpades = new Card("Nine of Spades", 9);
+		Card TenOfSpades = new Card("Ten of Spades", 10);
+		Card JackOfSpades = new Card("Jack of Spades", 11);
+		Card QueenOfSpades = new Card("Queen of Spades", 12);
+		Card KingOfSpades = new Card("King of Spades", 13);
+		Card AceOfSpades = new Card("Ace of Spades", 14);
+		Card TwoOfClubs = new Card("Two of Clubs", 2);
+		Card ThreeOfClubs = new Card("Three of Clubs", 3);
+		Card FourOfClubs = new Card("Four of Clubs", 4);
+		Card FiveOfClubs = new Card("Five of Clubs", 5);
+		Card SixOfClubs = new Card("Six of Clubs", 6);
+		Card SevenOfClubs = new Card("Seven of Clubs", 7);
+		Card EightOfClubs = new Card("Eight of Clubs", 8);
+		Card NineOfClubs = new Card("Nine of Clubs", 9);
+		Card TenOfClubs = new Card("Ten of Clubs", 10);
+		Card JackOfClubs = new Card("Jack of Clubs", 11);
+		Card QueenOfClubs = new Card("Queen of Clubs", 12);
+		Card KingOfClubs = new Card("King of Clubs", 13);
+		Card AceOfClubs = new Card("Ace of Clubs", 14);
+		cards.add(TwoOfHearts);
+		cards.add(ThreeOfHearts);
+		cards.add(FourOfHearts);
+		cards.add(FiveOfHearts);
+		cards.add(SixOfHearts);
+		cards.add(SevenOfHearts);
+		cards.add(EightOfHearts);
+		cards.add(NineOfHearts);
+		cards.add(TenOfHearts);
+		cards.add(JackOfHearts);
+		cards.add(QueenOfHearts);
+		cards.add(KingOfHearts);
+		cards.add(AceOfHearts);
+		cards.add(TwoOfDiamonds);
+		cards.add(ThreeOfDiamonds);
+		cards.add(FourOfDiamonds);
+		cards.add(FiveOfDiamonds);
+		cards.add(SixOfDiamonds);
+		cards.add(SevenOfDiamonds);
+		cards.add(EightOfDiamonds);
+		cards.add(NineOfDiamonds);
+		cards.add(TenOfDiamonds);
+		cards.add(JackOfDiamonds);
+		cards.add(QueenOfDiamonds);
+		cards.add(KingOfDiamonds);
+		cards.add(AceOfDiamonds);
+		cards.add(TwoOfSpades);
+		cards.add(ThreeOfSpades);
+		cards.add(FourOfSpades);
+		cards.add(FiveOfSpades);
+		cards.add(SixOfSpades);
+		cards.add(SevenOfSpades);
+		cards.add(EightOfSpades);
+		cards.add(NineOfSpades);
+		cards.add(TenOfSpades);
+		cards.add(JackOfSpades);
+		cards.add(QueenOfSpades);
+		cards.add(KingOfSpades);
+		cards.add(AceOfSpades);
+		cards.add(TwoOfClubs);
+		cards.add(ThreeOfClubs);
+		cards.add(FourOfClubs);
+		cards.add(FiveOfClubs);
+		cards.add(SixOfClubs);
+		cards.add(SevenOfClubs);
+		cards.add(EightOfClubs);
+		cards.add(NineOfClubs);
+		cards.add(TenOfClubs);
+		cards.add(JackOfClubs);
+		cards.add(QueenOfClubs);
+		cards.add(KingOfClubs);
+		cards.add(AceOfClubs);
+	}
+	public void shuffle() {
+		Collections.shuffle(cards);
+	}
+	public Card draw() {
+		Card cardToDraw = cards.get(0);
+		cards.remove(0);
+		return cardToDraw;
+	}
+}
